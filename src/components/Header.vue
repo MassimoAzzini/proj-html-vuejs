@@ -47,6 +47,7 @@ export default {
       </div>
     </div>
     <div class="jumbotron">
+      <img src="../assets/slider/slider-autocar-5.jpg" alt="">
 
     </div>
   </header>
@@ -100,8 +101,10 @@ header {
   }
 
   .jumbotron {
-    height: 460px;
+    height: 830px;
     background-color: $background-color;
+    img {
+    width: 100%}
   }
 
 }
