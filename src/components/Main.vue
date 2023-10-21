@@ -1,13 +1,25 @@
 <script>
+import SectionSearch from './partials/SectionSearch.vue';
+import SectionTeam from './partials/SectionTeam.vue';
+import SectionResent from './partials/SectionResent.vue';
+
 export default {
-  name: 'Main'
+  name: 'Main',
+  components: {
+    SectionSearch,
+    SectionTeam,
+    SectionResent
+    
+  }
 
 }
 </script>
 
 
-<template>
-  
+<template>  
+  <SectionSearch />
+  <SectionTeam />
+  <SectionResent />
 </template>
 
 

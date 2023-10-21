@@ -101,10 +101,16 @@ header {
   }
 
   .jumbotron {
+    background-color: $third-color;
     height: 830px;
-    background-color: $background-color;
+    padding-right: 10px;
+
+
     img {
-    width: 100%}
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
 }
