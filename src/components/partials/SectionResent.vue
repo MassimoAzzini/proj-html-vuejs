@@ -22,9 +22,7 @@ export default {
 <template>
   <section>
     <div class="container d-flex flex-column align-items-center">
-      <div class="bg-circle">
-        <img class="w-100" src="/src/assets/thumbs-up.png" alt="">
-      </div>
+      <img src="/src/assets/thumbs-up.png" alt="">
       <h1 class="my-3">Resent Articles</h1>
       <span class="mb-4">Useful information about car.</span>
       <div class="row">
@@ -49,10 +47,8 @@ section {
 
   .container {
 
-    .bg-circle {
+    img {
       width: 100px;
-      height: 100px;
-      border-radius: 50%;
     }
 
   }

@@ -1,13 +1,13 @@
 <script>
 import SectionSearch from './partials/SectionSearch.vue';
-import SectionTeam from './partials/SectionTeam.vue';
+import SectionCustomer from './partials/SectionCustomer.vue';
 import SectionResent from './partials/SectionResent.vue';
 
 export default {
   name: 'Main',
   components: {
     SectionSearch,
-    SectionTeam,
+    SectionCustomer,
     SectionResent
     
   }
@@ -18,7 +18,7 @@ export default {
 
 <template>  
   <SectionSearch />
-  <SectionTeam />
+  <SectionCustomer />
   <SectionResent />
 </template>
 

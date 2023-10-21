@@ -18,6 +18,7 @@ export default {
 <style lang="scss" scoped>
 section {
   height: 2080px;
+
 }
 
 </style>

@@ -14,28 +14,28 @@ export const store = reactive ({
 
   resentArticles: [
     { 
-      id: 1201,
+      id: 1301,
       image: 'news-autocar-1-600x359.jpg',
       data: '06.07.2022',
       title: 'Why is BMW loved?',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum doloremque impedit quo delectus, non magni iusto itaque. Qui, tempora nemo.'
     },
     {
-      id: 1202,
+      id: 1302,
       image: 'news-autocar-2-600x359.jpg',
       data: '06.07.2022',
       title: 'How solid is Audi?',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum doloremque impedit quo delectus, non magni iusto itaque. Qui, tempora nemo.'
     },
     {
-      id: 1203,
+      id: 1303,
       image: 'news-autocar-6-600x359.jpg',
       data: '06.07.2022',
       title: 'What brand is Skoda?',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum doloremque impedit quo delectus, non magni iusto itaque. Qui, tempora nemo.'
     },
     {
-      id: 1204,
+      id: 1304,
       image: 'news-autocar-5-600x359.jpg',
       data: '06.07.2022',
       title: 'Is the Auris diesel',
