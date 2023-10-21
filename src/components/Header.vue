@@ -48,7 +48,7 @@ export default {
     </div>
     <div class="jumbotron">
       <img src="../assets/slider/slider-autocar-5.jpg" alt="">
-
+      
     </div>
   </header>
   
@@ -88,7 +88,7 @@ header {
     
           }
         &.item-black {
-          background-color: $background-color;
+          background-color: $first-color;
     
           a {
             color: $third-color;
