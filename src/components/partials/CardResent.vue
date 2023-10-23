@@ -17,7 +17,6 @@ export default {
   <div class="col-3 px-4">
     <div class="card p-4 text-center">
       <div class="image">
-        <img class="w-100" :src="car.src" alt="">
         <img class="w-100" :src="`/src/assets/resent/` + car.image" alt="">
       </div>
       <span>{{ car.data }} - Auto Car</span>

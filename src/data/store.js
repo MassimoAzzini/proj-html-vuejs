@@ -12,6 +12,23 @@ export const store = reactive ({
     twitter: 'https://www.twitter.com/AutoCar/'
   },
 
+  slider: [
+    {
+      id: 1101,
+      image: 'slider-autocar-5.jpg',
+      title: 'Buy And Sell Your Car At Its Value',
+      text: 'Find the right price and dealer.',
+    },
+
+    {
+      id: 1102,
+      image: 'slider-autocar-6.jpg',
+      title: 'Buy And Sell Your Car At Its Value2',
+      text: 'Find the right price and dealer2.',
+    }
+  ],
+  
+
   resentArticles: [
     { 
       id: 1301,

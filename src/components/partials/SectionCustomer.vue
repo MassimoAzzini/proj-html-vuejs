@@ -30,12 +30,16 @@ export default {
 
       <div class="row">
 
-      <CustomerCard
-        v-for="customer in store.CustomerAutoCar"
-        :key="customer.name"
-        :customer="customer" />
+        <CustomerCard
+          v-for="customer in store.CustomerAutoCar"
+          :key="customer.name"
+          :customer="customer" />
       </div>
 
+      <div class="mt-5 d-flex">
+        <div class="black stripe"> </div>
+        <div class="gray stripe"> </div>
+      </div>
 
     </div>
 
@@ -60,6 +64,22 @@ section {
 
   img {
     width: 75px;
+  }
+
+  .stripe {
+    height: 7px;
+    border-radius: 3px;
+  }
+
+  .stripe.black {
+    width: 115px;
+    background-color: $first-color;
+  }
+
+  .stripe.gray {
+    width: 60px;
+    background-color: $second-color;
+    margin-left: 10px;
   }
 
 }

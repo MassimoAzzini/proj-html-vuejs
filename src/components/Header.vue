@@ -1,6 +1,13 @@
 <script>
+import CarouselHeader from './partials/CarouselHeader.vue';
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  components: {
+    CarouselHeader,
+
+  }
+  
 
 }
 </script>
@@ -46,10 +53,9 @@ export default {
         </div>
       </div>
     </div>
-    <div class="jumbotron">
-      <img src="../assets/slider/slider-autocar-5.jpg" alt="">
-      
-    </div>
+
+    <CarouselHeader />
+
   </header>
   
 </template>
@@ -89,6 +95,7 @@ header {
           }
         &.item-black {
           background-color: $first-color;
+          border-radius: 5px;
     
           a {
             color: $third-color;
@@ -100,18 +107,18 @@ header {
     }
   }
 
-  .jumbotron {
-    background-color: $third-color;
-    height: 830px;
-    padding-right: 10px;
+  // .jumbotron {
+  //   background-color: $third-color;
+  //   height: 830px;
+  //   padding-right: 10px;
 
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
+  //   img {
+  //     width: 100%;
+  //     height: 100%;
+  //     object-fit: cover;
+  //   }
+  // }
 
 }
 
