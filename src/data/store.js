@@ -9,7 +9,7 @@ export const store = reactive ({
     email: 'example@example.com',
     facebook: 'https://www.facebook.com/AutoCar/',
     instagram: 'https://www.instagram.com/AutoCar/',
-    twitter: 'https://www.twitter.com/AutoCar/'
+    twitter: 'https://www.twitter.com/AutoCar/',
   },
 
   slider: [
@@ -27,7 +27,99 @@ export const store = reactive ({
       text: 'Find the right price and dealer2.',
     }
   ],
-  
+
+
+  modelCars: [
+    {
+      id: 1201,
+      brand: 'BMW',
+      model: 'M9',
+      category: 'Cabrio',
+      Fuel: 'Eletric',
+      Transmission: 'Auto',
+      Status: 'km-0',
+      Price: 34000,
+      img: 'bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg',
+    },
+    {
+      id: 1202,
+      brand: 'BMW',
+      model: 'M8',
+      category: 'Cabrio',
+      Fuel: 'Diesel',
+      Transmission: 'Manual',
+      Status: 'Used',
+      Price: 34000,
+      img: 'bmw88-400x300.jpg',
+    },
+    {
+      id: 1203,
+      brand: 'BMW',
+      model: '4',
+      category: 'Cabrio',
+      Fuel: 'Gasoline',
+      Transmission: 'Auto',
+      Status: 'Used',
+      Price: 34000,
+      img: 'bmw442-400x300.jpg',
+    },
+    {
+      id: 1204,
+      brand: 'Seat',
+      model: 'Ibiza',
+      category: 'Hatchback',
+      Fuel: 'Electric',
+      Transmission: 'Manual',
+      Status: 'km-o',
+      Price: 27000,
+      img: 'yeni-ibiza-2-400x300.jpg',
+    },
+    {
+      id: 1205,
+      brand: 'Seat',
+      model: 'Arona',
+      category: 'SUV',
+      Fuel: 'Gasoline',
+      Transmission: 'Auto',
+      Status: 'New',
+      Price: 68000,
+      img: 'makyajli-2022-seat-arona-1-400x300.jpg',
+    },
+    {
+      id: 1206,
+      brand: 'Volkswagen',
+      model: 'Talgo',
+      category: 'SUV',
+      Fuel: 'Electric',
+      Transmission: 'Auto',
+      Status: 'Used',
+      Price: 52000,
+      img: 'vw-taigo3832-400x300.jpg',
+    },
+    {
+      id: 1207,
+      brand: 'Volkswagen',
+      model: 'T-Cross',
+      category: 'SUV',
+      Fuel: 'Diesel',
+      Transmission: 'Manual',
+      Status: 'Used',
+      Price: 47000,
+      img: '2019-vw-t-cross-400x300.jpg',
+    },
+    {
+      id: 1208,
+      brand: 'Volkswagen',
+      model: 'Passat',
+      category: 'Sedan',
+      Fuel: 'Diesel',
+      Transmission: 'Auto',
+      Status: 'New',
+      Price: 32000,
+      img: 'volkswagen-passat-1280x720-1-400x300.jpg',
+    }
+  ],
+
 
   resentArticles: [
     { 
