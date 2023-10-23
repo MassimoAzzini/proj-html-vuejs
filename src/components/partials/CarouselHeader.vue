@@ -24,9 +24,10 @@ export default {
 <div id="carouselExampleIndicators" class="carousel slide cst-carosel">
   <div class="carousel-inner">
     <CardSlider
-      v-for="slide in store.slider"
+      v-for="slide, index in store.slider"
       :key="slide.id"
-      :slide="slide" />
+      :slide="slide"
+      :index="index" />
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>

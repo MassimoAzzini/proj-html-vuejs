@@ -93,6 +93,7 @@ header {
             }
     
           }
+          
         &.item-black {
           background-color: $first-color;
           border-radius: 5px;
