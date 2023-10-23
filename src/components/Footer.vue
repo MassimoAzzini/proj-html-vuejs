@@ -21,7 +21,7 @@ export default {
 
         <div class="col-3 contact">
           <div class="logo">
-            <img class="w-100" src="../assets/logo/logo-footer-autocar11.png" alt="">
+            <img class="w-100" src="/src/assets/logo/logo-footer-autocar11.png" alt="">
           </div>
           <div class="address">
             <i class="fa-solid fa-location-dot"></i>

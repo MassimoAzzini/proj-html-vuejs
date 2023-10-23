@@ -1,6 +1,6 @@
 <script>
 import CardSlider from './CardSlider.vue';
-import { store } from '/src/data/store.js';
+import { store } from '../../data/store';
 
 
 export default {

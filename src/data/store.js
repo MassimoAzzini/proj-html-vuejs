@@ -28,6 +28,8 @@ export const store = reactive ({
     }
   ],
 
+  allCategory: ['Cabrio', 'Coupe', 'Hatchback', 'Pick Up', 'Sedan', 'SUV'],
+
 
   modelCars: [
     {
@@ -35,10 +37,10 @@ export const store = reactive ({
       brand: 'BMW',
       model: 'M9',
       category: 'Cabrio',
-      Fuel: 'Eletric',
-      Transmission: 'Auto',
-      Status: 'km-0',
-      Price: 34000,
+      fuel: 'Electric',
+      transmission: 'Auto',
+      status: 'km-0',
+      price: '34.000',
       img: 'bmw-8-series-convertible-technical-data-sp-desktop-400x300.jpg',
     },
     {
@@ -46,10 +48,10 @@ export const store = reactive ({
       brand: 'BMW',
       model: 'M8',
       category: 'Cabrio',
-      Fuel: 'Diesel',
-      Transmission: 'Manual',
-      Status: 'Used',
-      Price: 34000,
+      fuel: 'Diesel',
+      transmission: 'Manual',
+      status: 'Used',
+      price: '34.000',
       img: 'bmw88-400x300.jpg',
     },
     {
@@ -57,10 +59,10 @@ export const store = reactive ({
       brand: 'BMW',
       model: '4',
       category: 'Cabrio',
-      Fuel: 'Gasoline',
-      Transmission: 'Auto',
-      Status: 'Used',
-      Price: 34000,
+      fuel: 'Gasoline',
+      transmission: 'Auto',
+      status: 'Used',
+      price: '34.000',
       img: 'bmw442-400x300.jpg',
     },
     {
@@ -68,10 +70,10 @@ export const store = reactive ({
       brand: 'Seat',
       model: 'Ibiza',
       category: 'Hatchback',
-      Fuel: 'Electric',
-      Transmission: 'Manual',
-      Status: 'km-o',
-      Price: 27000,
+      fuel: 'Electric',
+      transmission: 'Manual',
+      status: 'km-o',
+      price: '27.000',
       img: 'yeni-ibiza-2-400x300.jpg',
     },
     {
@@ -79,10 +81,10 @@ export const store = reactive ({
       brand: 'Seat',
       model: 'Arona',
       category: 'SUV',
-      Fuel: 'Gasoline',
-      Transmission: 'Auto',
-      Status: 'New',
-      Price: 68000,
+      fuel: 'Gasoline',
+      transmission: 'Auto',
+      status: 'New',
+      price: '68.000',
       img: 'makyajli-2022-seat-arona-1-400x300.jpg',
     },
     {
@@ -90,10 +92,10 @@ export const store = reactive ({
       brand: 'Volkswagen',
       model: 'Talgo',
       category: 'SUV',
-      Fuel: 'Electric',
-      Transmission: 'Auto',
-      Status: 'Used',
-      Price: 52000,
+      fuel: 'Electric',
+      transmission: 'Auto',
+      status: 'Used',
+      price: '52.000',
       img: 'vw-taigo3832-400x300.jpg',
     },
     {
@@ -101,10 +103,10 @@ export const store = reactive ({
       brand: 'Volkswagen',
       model: 'T-Cross',
       category: 'SUV',
-      Fuel: 'Diesel',
-      Transmission: 'Manual',
-      Status: 'Used',
-      Price: 47000,
+      fuel: 'Diesel',
+      transmission: 'Manual',
+      status: 'Used',
+      price: '47.000',
       img: '2019-vw-t-cross-400x300.jpg',
     },
     {
@@ -112,10 +114,10 @@ export const store = reactive ({
       brand: 'Volkswagen',
       model: 'Passat',
       category: 'Sedan',
-      Fuel: 'Diesel',
-      Transmission: 'Auto',
-      Status: 'New',
-      Price: 32000,
+      fuel: 'Diesel',
+      transmission: 'Auto',
+      status: 'New',
+      price: '32.000',
       img: 'volkswagen-passat-1280x720-1-400x300.jpg',
     }
   ],
@@ -173,7 +175,14 @@ export const store = reactive ({
       photo: 'testimonial4-1.png',
       text: 'A fast and reliable vehicle selling site. Rare quality website with hundreds of model vehicles.'
     }
-  ]
+  ],
+
+  brand: [],
+  fuelType: [],
+  status: [],
   
+
+
+
   
 })

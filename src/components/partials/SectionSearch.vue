@@ -1,6 +1,22 @@
 <script>
+import { store } from '../../data/store';
+import CardSearch from './CardSearch.vue';
+import CardResultSearch from './CardResultSearch.vue';
+
 export default {
-  name: 'SectionSearch'
+  name: 'SectionSearch',
+
+  components: {
+    CardSearch,
+    CardResultSearch
+  },
+
+  data() {
+    return {
+      store
+    }
+  },
+  
 
 }
 </script>
@@ -8,7 +24,7 @@ export default {
 <template>
   <section>
     <div class="container">
-      <div class="search-bar d-flex justify-content-around my-5">
+      <div class="search-bar d-flex justify-content-around my-4">
         <input type="text" placeholder="Keywords">
         <input type="text" placeholder="Location">
         <select class="form-select" aria-label="Default select example">
@@ -45,13 +61,20 @@ export default {
       </div>
 
 
-      <div class="row">
-        <div class="col-2 d-flex flex-column align-items-center card-category">
-          <img class="w-100" src="/src/assets/search/cabrio.jpg" alt="">
-          <span class="category">Cabrio</span>
-          <span class="match">3 Listings</span>
-        </div>
+      <div class="row mb-4">
+        <CardSearch
+          v-for="category, index in store.allCategory"
+          :key="'cat_'+ index"
+          :category="category" />
       </div>
+
+      <div class="container-result-cards">
+        <div class="row">
+          <CardResultSearch v-for="carObj in store.modelCars" :key="carObj.id" :carObj="carObj" />
+        </div>
+
+      </div>
+
     </div>
 
   </section>
@@ -89,7 +112,7 @@ section {
   }
 
   .card-category {
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
     .category {
       font-size: 1.1rem;
     }

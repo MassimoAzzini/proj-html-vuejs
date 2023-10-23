@@ -1,6 +1,6 @@
 <script>
 import CardResent from './CardResent.vue';
-import { store } from '../../data/store';
+import { store } from '/src/data/store';
 
 export default {
   name: 'SectionResent',
