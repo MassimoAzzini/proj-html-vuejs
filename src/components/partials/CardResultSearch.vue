@@ -1,10 +1,24 @@
 <script>
+import { store } from '../../data/store';
+
 export default {
   name: 'CardResultSearch',
 
   props: {
     carObj: Object,
-  }
+  },
+
+  data() {
+    return {
+      store
+    }
+  },
+
+  methods: {
+    getImage(image){
+      return new URL(`../../assets/show/`+ image, import.meta.url).href;
+    }
+  },
 
 }
 </script>
@@ -14,7 +28,7 @@ export default {
 
   <div class="col-3 p-3 col-cst mb-4">
     <div class="card-cast">
-      <img class="w-100" :src="`/src/assets/show/`+ carObj.img" alt="">
+      <img class="w-100" :src="getImage(carObj.img)" alt="">
       <div class="description">
         <div>
           <span>{{ carObj.brand }}</span>

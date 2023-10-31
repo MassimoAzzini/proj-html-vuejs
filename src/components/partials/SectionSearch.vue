@@ -29,33 +29,31 @@ export default {
         <input type="text" placeholder="Location">
         <select class="form-select" aria-label="Default select example">
           <option selected value="">All Categories</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option v-for="cat, index in store.allCategory" :key="'cat_'+ index" :value="cat">{{ cat }}</option>
         </select>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Brand</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select v-model="store.brand" class="form-select" aria-label="Default select example">
+          <option selected value="">Brand</option>
+          <option value="Audi">Audi</option>
+          <option value="BMW">BMW</option>
+          <option value="Seat">Seat</option>
+          <option value="Volkswagen">Volkswagen</option>
         </select>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Fuel Type</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select v-model="store.fuelType" class="form-select" aria-label="Default select example">
+          <option selected value="">Fuel Type</option>
+          <option value="Diesel">Diesel</option>
+          <option value="Gasoline">Gasoline</option>
+          <option value="Electric">Electric</option>
         </select>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Transmission</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select v-model="store.transmission" class="form-select" aria-label="Default select example">
+          <option selected value="">Transmission</option>
+          <option value="Automatic">Automatic</option>
+          <option value="Manual">Manual</option>
         </select>
-        <select class="form-select" aria-label="Default select example">
-          <option selected>Status</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+        <select v-model="store.status" class="form-select" aria-label="Default select example">
+          <option selected value="">Status</option>
+          <option value="New">New</option>
+          <option value="Km-0">Km-0</option>
+          <option value="Used">Used</option>
         </select>
         <button>Search</button>
       </div>
@@ -64,7 +62,7 @@ export default {
       <div class="row mb-4">
         <CardSearch
           v-for="category, index in store.allCategory"
-          :key="'cat_'+ index"
+          :key="'category_'+ index"
           :category="category" />
       </div>
 

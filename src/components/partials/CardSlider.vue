@@ -5,7 +5,15 @@ export default {
   props: {
     slide: Object,
     index: Number,
-  }
+  },
+
+  methods: {
+    getImage(image){
+      return new URL(`../../assets/slider/`+ image, import.meta.url).href;
+    }
+  },
+
+
 }
 
 </script>
@@ -13,7 +21,7 @@ export default {
 <template>
 
   <div class="carousel-item position-relative" :class="{'active' : index == 0}">
-    <img :src="`/src/assets/slider/`+ slide.image" class="d-block w-100" alt="">
+    <img :src="getImage(slide.image)" class="d-block w-100" alt="">
     <div class="text-img position-absolute z-1">
       <h1>{{ slide.title }}</h1>
       <p class="mb-4">{{ slide.text }}</p>

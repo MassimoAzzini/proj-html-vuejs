@@ -6,7 +6,14 @@ export default {
 
   props: {
     car: Object,
-  }
+  },
+
+  methods: {
+    getImage(image){
+      return new URL(`../../assets/resent/`+ image, import.meta.url).href;
+    }
+  },
+
 
 }
 </script>
@@ -17,7 +24,7 @@ export default {
   <div class="col-3 px-4">
     <div class="card p-4 text-center">
       <div class="image">
-        <img class="w-100" :src="`/src/assets/resent/` + car.image" alt="">
+        <img class="w-100" :src="getImage(car.image)" alt="">
       </div>
       <span>{{ car.data }} - Auto Car</span>
       <div class="description">

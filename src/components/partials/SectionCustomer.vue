@@ -22,7 +22,7 @@ export default {
   <section>
     <div class="container d-flex flex-column align-items-center">
 
-      <img src="/src/assets/thumbs-up-stars.png" alt="">
+      <img src="/thumbs-up-stars.png" alt="">
 
       <h1 class="mt-4 mb-3">What Are Our Customers Saying?</h1>
 

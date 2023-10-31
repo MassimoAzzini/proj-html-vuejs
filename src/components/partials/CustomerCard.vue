@@ -6,7 +6,14 @@ export default {
 
   props: {
     customer: Object,
-  }
+  },
+
+  methods: {
+    getImage(image){
+      return new URL(`../../assets/testimonial/`+ image, import.meta.url).href;
+    }
+  },
+
 
 }
 </script>
@@ -17,7 +24,7 @@ export default {
     <div class="card px-4 py-5 d-flex flex-column align-items-center">
       <span class="position-absolute"><i class="fa-solid fa-quote-right"></i></span>
       <p class="text-center">{{ customer.text }}</p>
-      <img class="mt-3 mb-5" :src="`/src/assets/testimonial/` + customer.photo" alt="">
+      <img class="mt-3 mb-5" :src="getImage(customer.photo)" alt="">
       <span>{{ customer.name }}</span>
     </div>
   </div>

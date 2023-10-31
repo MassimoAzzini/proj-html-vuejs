@@ -22,7 +22,7 @@ export default {
 <template>
   <section>
     <div class="container d-flex flex-column align-items-center">
-      <img src="/src/assets/thumbs-up.png" alt="">
+      <img src="/thumbs-up.png" alt="">
       <h1 class="my-3">Resent Articles</h1>
       <span class="mb-4">Useful information about car.</span>
       <div class="row">
