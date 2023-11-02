@@ -1,2 +1,11 @@
-
+@use './partials/vars.scss' as *;
 @import 'bootstrap/scss/bootstrap';
+
+.btn-cust {
+  font-weight: bold;
+  color: $third-color;
+  background-color: $first-color;
+  border: none;
+  padding: 20px 40px;
+
+}

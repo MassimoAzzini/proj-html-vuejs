@@ -32,7 +32,7 @@ export default {
         <div class="container-description">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eius debitis sapiente consectetur minus fuga odio quia maxime eaque porro?</p>
         </div>
-        <button>More</button>
+        <button class="btn-cust">More</button>
 
       </div>
     </div>
@@ -68,15 +68,6 @@ export default {
         
       }
     }
-
-
-    button {
-      color: $third-color;
-      background-color: $first-color;
-      border: none;
-      padding: 15px 40px;
-    }
-
 
   }
 
