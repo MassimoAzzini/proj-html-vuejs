@@ -177,14 +177,5 @@ export const store = reactive ({
     }
   ],
 
-
-  brand: '',
-  fuelType: '',
-  transmission: '',
-  status: '',
-  
-
-
-
   
 })
